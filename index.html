@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+
+<body>
+    <p id="data"></p>
+    <script>
+    var people = [
+
+        {
+            "name": "Mahmoud",
+            "age": 200,
+            "email": "email_example@gmail.com"
+        },
+        {
+            // More date goes here ...
+        }
+
+
+    ];
+
+    for (var i = 0; i < people.length; i++) {
+        //display data inside paragraph with an id of [data]
+        var data = document.getElementById('data').innerHTML += [people[0].name];
+        console.log(people[0]);
+
+
+    }
+
+    delete people[0].name;
+    console.log(people[0]);
+    </script>
+</body>
+
+</html>
