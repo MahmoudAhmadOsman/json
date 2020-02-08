@@ -19,7 +19,7 @@
       "age": 18,
       "country": "USA",
       "state": "TX",
-      "address": "123 Main Street, Dallas, 55488",
+      "address": "4658 Riverdale Street, Dallas, 55488",
       "phone": 8067897456
     },
     {
@@ -29,7 +29,7 @@
       "age": 28,
       "country": "USA",
       "state": "VT",
-      "address": "123 Main Street, Burlinton, 78468",
+      "address": "987 Flynn Street, Burlinton, 78468",
       "phone": 8029784562
     },
     {
@@ -39,7 +39,7 @@
       "age": 65,
       "country": "USA",
       "state": "MA",
-      "address": "123 Main Street, Boston, 64738",
+      "address": "189 Foster Street, Boston, 64738",
       "phone": 6178797548
     }
   ]
