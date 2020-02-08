@@ -1,47 +1,42 @@
- [{
- 		"id": 1,
- 		"firstName": "Mahmoud",
- 		"lastName": "Osman",
- 		"age": 12,
- 		"country": "USA",
- 		"state": "MN",
- 		"address": "123 Main Street, MN, 55488",
- 		"phone": 6129786413
-
- 	},
-
-
-
- 	{
- 		"id": 2,
- 		"firstName": "John",
- 		"lastName": "Doe",
- 		"age": 18,
- 		"country": "USA",
- 		"state": "TX",
- 		"address": "123 Main Street, Dallas, 55488",
- 		"phone": 8067897456
- 	},
-
- 	{
- 		"id": 3,
- 		"firstName": "Sarah",
- 		"lastName": "Smith",
- 		"age": 28,
- 		"country": "USA",
- 		"state": "VT",
- 		"address": "123 Main Street, Burlinton, 55488",
- 		"phone": 8029784562
- 	},
-
- 	{
- 		"id": 4,
- 		"firstName": "Mark",
- 		"lastName": "Davis",
- 		"age": 65,
- 		"country": "USA",
- 		"state": "MA",
- 		"address": "123 Main Street, Boston, 55488",
- 		"phone": 6178797548
- 	}
- ]
+[
+  {
+    "id": 1,
+    "firstName": "Mahmoud",
+    "lastName": "Osman",
+    "age": 12,
+    "country": "USA",
+    "state": "MN",
+    "address": "123 Main Street, MN, 55488",
+    "phone": 6129786413
+  },
+  {
+    "id": 2,
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 18,
+    "country": "USA",
+    "state": "TX",
+    "address": "123 Main Street, Dallas, 55488",
+    "phone": 8067897456
+  },
+  {
+    "id": 3,
+    "firstName": "Sarah",
+    "lastName": "Smith",
+    "age": 28,
+    "country": "USA",
+    "state": "VT",
+    "address": "123 Main Street, Burlinton, 55488",
+    "phone": 8029784562
+  },
+  {
+    "id": 4,
+    "firstName": "Mark",
+    "lastName": "Davis",
+    "age": 65,
+    "country": "USA",
+    "state": "MA",
+    "address": "123 Main Street, Boston, 55488",
+    "phone": 6178797548
+  }
+]
