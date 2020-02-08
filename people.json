@@ -1,5 +1,6 @@
 const people = [
   {
+    { 
     id: 1,
     firstName: "Mahmoud",
     lastName: "Osman",
