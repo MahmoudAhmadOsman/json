@@ -9,7 +9,7 @@
 <body>
     <p id="data"></p>
     <script>
-    var people = [
+    var person = [
 
         {
             "name": "Mahmoud",
@@ -23,16 +23,16 @@
 
     ];
 
-    for (var i = 0; i < people.length; i++) {
+    for (var i = 0; i < person.length; i++) {
         //display data inside paragraph with an id of [data]
-        var data = document.getElementById('data').innerHTML += [people[0].name];
-        console.log(people[0]);
+        var data = document.getElementById('data').innerHTML += [person[0].name];
+        console.log(person[0]);
 
 
     }
 
-    delete people[0].name;
-    console.log(people[0]);
+    delete person[0].name;
+    console.log(person[0]);
     </script>
 </body>
 
