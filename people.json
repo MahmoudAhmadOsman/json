@@ -1,1 +1,51 @@
-{"people":[{"id":1,"firstName":"Mahmoud","lastName":"Osman","age":12,"email":"mahmoud@gmail.com","country":"USA","state":"MN","address":"123 Main Street, MN, 55488","phone":6129786413,"website":"www.netsansoftware.com","image":"http://www.netsansoftware.com/images/mahmoud.jpg","github":"https://github.com/MahmoudAhmadOsman"},{"id":2,"firstName":"John","lastName":"Doe","age":18,"email":"johndoe@gmail.com","country":"USA","state":"TX","address":"4658 Riverdale Street, Dallas, 55488","phone":8067897456},{"id":3,"firstName":"Sarah","lastName":"Smith","age":28,"email":"sarah_smith@gmail.com","country":"USA","state":"VT","address":"987 Flynn Street, Burlinton, 78468","phone":8029784562},{"id":4,"firstName":"Mark","lastName":"Davis","age":65,"email":"mark-davis93@gmail.com","country":"USA","state":"MA","address":"189 Foster Street, Boston, 64738","phone":6178797548}]}
+{
+  "people": [
+    {
+      "id": 1,
+      "firstName": "Mahmoud",
+      "lastName": "Osman",
+      "age": 12,
+      "email": "mahmoud@gmail.com",
+      "country": "USA",
+      "state": "MN",
+      "address": "123 Main Street, MN, 55488",
+      "phone": 6129786413,
+      "website": "www.netsansoftware.com",
+      "image": "http://www.netsansoftware.com/images/mahmoud.jpg",
+      "github": "https://github.com/MahmoudAhmadOsman"
+    },
+    {
+      "id": 2,
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 18,
+      "email": "johndoe@gmail.com",
+      "country": "USA",
+      "state": "TX",
+      "address": "4658 Riverdale Street, Dallas, 55488",
+      "phone": 8067897456
+    },
+    {
+      "id": 3,
+      "firstName": "Sarah",
+      "lastName": "Smith",
+      "age": 28,
+      "email": "sarah_smith@gmail.com",
+      "country": "USA",
+      "state": "VT",
+      "address": "987 Flynn Street, Burlinton, 78468",
+      "phone": 8029784562
+    },
+    {
+      "id": 4,
+      "firstName": "Mark",
+      "lastName": "Davis",
+      "age": 65,
+      "email": "mark-davis93@gmail.com",
+      "country": "USA",
+      "state": "MA",
+      "address": "189 Foster Street, Boston, 64738",
+      "phone": 6178797548
+    }
+  ]
+}
