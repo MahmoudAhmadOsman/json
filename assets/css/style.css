@@ -1,13 +1,22 @@
 body {
-  background-color: #d8d8d8;
+  background-color: #fff;
+  width: auto;
+  height: auto;
 }
 .header {
   border-bottom: 2px solid #ccc;
   margin-bottom: 40px;
 }
-
+.api_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+}
+.api_container table tr th {
+  font-size: 14px;
+}
 .api_container .container {
-  background-color: #fff;
   height: 100%;
 }
 
