@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>JSON to HTML</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>State</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>Website</th>
+              <th>Image</th>
+              <th>URL</th>
+            </tr>
+          </thead>
+          <tbody id="jsonData"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script>
+      var people = [
+        {
+          id: 1,
+          firstName: "Mahmoud",
+          lastName: "Osman",
+          age: 12,
+          email: "mahmoud@gmail.com",
+          country: "USA",
+          state: "MN",
+          address: "123 Main Street, MN, 55488",
+          phone: 6129786413,
+          website: "www.netsansoftware.com",
+          image: "http://www.netsansoftware.com/images/mahmoud.jpg",
+          github: "https://github.com/MahmoudAhmadOsman",
+        },
+        {
+          id: 2,
+          firstName: "John",
+          lastName: "Doe",
+          age: 18,
+          email: "johndoe@gmail.com",
+          country: "USA",
+          state: "TX",
+          address: "4658 Riverdale Street, Dallas, 55488",
+          phone: 8067897456,
+          website: "www.netsansoftware.com",
+          image: "http://www.netsansoftware.com/images/mahmoud.jpg",
+          github: "https://github.com/MahmoudAhmadOsman",
+        },
+        {
+          id: 3,
+          firstName: "Sarah",
+          lastName: "Smith",
+          age: 28,
+          email: "sarah_smith@gmail.com",
+          country: "USA",
+          state: "VT",
+          address: "987 Flynn Street, Burlinton, 78468",
+          phone: 8029784562,
+        },
+        {
+          id: 4,
+          firstName: "Mark",
+          lastName: "Davis",
+          age: 65,
+          email: "mark-davis93@gmail.com",
+          country: "USA",
+          state: "MA",
+          address: "189 Foster Street, Boston, 64738",
+          phone: 6178797548,
+        },
+      ];
+
+      console.log(people);
+      buildTable(people);
+      function buildTable(data) {
+        var table = document.getElementById("jsonData");
+        for (i = 0; i < data.length; i++) {
+          var row = `
+          <tr>
+              <td>${data[1].id}</td>
+              <td>${data[1].firstName}</td>
+              <td>${data[1].lastName}</td>
+              <td>${data[1].age}</td>
+              <td>${data[1].email}</td>
+              <td>${data[1].country}</td>
+              <td>${data[1].state}</td>
+              <td>${data[1].address}</td>
+              <td>${data[1].phone}</td>
+              <td>${data[1].website}</td>
+              <td>${data[1].image}</td>
+              <td>${data[1].github}</td>
+            </tr>
+            
+            `;
+          table.innerHTML += row;
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+==============================
+
+   MAP() function
+
+==============================
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>JSON to HTML</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>State</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>Website</th>
+              <th>Image</th>
+              <th>URL</th>
+            </tr>
+          </thead>
+          <tbody id="jsonData"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script>
+      var people = [
+        {
+          id: 1,
+          firstName: "Mahmoud",
+          lastName: "Osman",
+          age: 12,
+          email: "mahmoud@gmail.com",
+          country: "USA",
+          state: "MN",
+          address: "123 Main Street, MN, 55488",
+          phone: 6129786413,
+          website: "www.netsansoftware.com",
+          image: "http://www.netsansoftware.com/images/mahmoud.jpg",
+          github: "https://github.com/MahmoudAhmadOsman",
+        },
+        {
+          id: 2,
+          firstName: "John",
+          lastName: "Doe",
+          age: 18,
+          email: "johndoe@gmail.com",
+          country: "USA",
+          state: "TX",
+          address: "4658 Riverdale Street, Dallas, 55488",
+          phone: 8067897456,
+          website: "www.netsansoftware.com",
+          image: "http://www.netsansoftware.com/images/mahmoud.jpg",
+          github: "https://github.com/MahmoudAhmadOsman",
+        },
+        {
+          id: 3,
+          firstName: "Sarah",
+          lastName: "Smith",
+          age: 28,
+          email: "sarah_smith@gmail.com",
+          country: "USA",
+          state: "VT",
+          address: "987 Flynn Street, Burlinton, 78468",
+          phone: 8029784562,
+        },
+        {
+          id: 4,
+          firstName: "Mark",
+          lastName: "Davis",
+          age: 65,
+          email: "mark-davis93@gmail.com",
+          country: "USA",
+          state: "MA",
+          address: "189 Foster Street, Boston, 64738",
+          phone: 6178797548,
+        },
+      ];
+
+      console.log(people);
+      buildTable(people);
+      function buildTable(data) {
+        var table = document.getElementById("jsonData");
+
+        var data = people.map(function (item) {
+          console.log(item);
+          var row = `
+                <tr>
+                    <td>${data[0].id}</td>
+                    <td>${data[0].firstName}</td>
+                    <td>${data[1].lastName}</td>
+                    <td>${data[1].age}</td>
+                    <td>${data[1].email}</td>
+                    <td>${data[1].country}</td>
+                    <td>${data[1].state}</td>
+                    <td>${data[1].address}</td>
+                    <td>${data[1].phone}</td>
+                    <td>${data[1].website}</td>
+                    <td>${data[1].image}</td>
+                    <td>${data[1].github}</td>
+                  </tr>
+
+                  `;
+          table.innerHTML += row;
+        });
+
+        for (i = 0; i < data.length; i++) {
+          var row = `
+                <tr>
+                    <td>${data[1].id}</td>
+                    <td>${data[1].firstName}</td>
+                    <td>${data[1].lastName}</td>
+                    <td>${data[1].age}</td>
+                    <td>${data[1].email}</td>
+                    <td>${data[1].country}</td>
+                    <td>${data[1].state}</td>
+                    <td>${data[1].address}</td>
+                    <td>${data[1].phone}</td>
+                    <td>${data[1].website}</td>
+                    <td>${data[1].image}</td>
+                    <td>${data[1].github}</td>
+                  </tr>
+
+                  `;
+          table.innerHTML += row;
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

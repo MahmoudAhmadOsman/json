@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <title>JSON</title>
-</head>
+    <title>JSON to HTML</title>
+  </head>
+  <body>
+    <section class="container">
+      <table class="table table-bordered table-md">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>Address</th>
+            <th>Phone #</th>
+          </tr>
+        </thead>
+        <tbody id="jsonData"></tbody>
+      </table>
+    </section>
 
-<body>
-    <p id="data"></p>
     <script>
-    var person = [
+      $(document).ready(function () {
+        //getJSON excepts 2 args, json filename and callback function
+        $.getJSON("people.json", function (data) {
+          var people_data = "";
+          $.each(data, function (key, value) {
+            people_data += "<tr>";
+            people_data += "<td>" + value.id + "</td>";
+            people_data += "<td>" + value.firstName + "</td>";
+            people_data += "<td>" + value.lastName + "</td>";
+            people_data += "<td>" + value.age + "</td>";
+            people_data += "<td>" + value.email + "</td>";
+            people_data += "<td>" + value.country + "</td>";
+            people_data += "<td>" + value.state + "</td>";
+            people_data += "<td>" + value.address + "</td>";
+            people_data += "<td>" + value.phone + "</td>";
 
-        {
-            "name": "Mahmoud",
-            "age": 200,
-            "email": "email_example@gmail.com"
-        },
-        {
-            // More date goes here ...
-        }
-
-
-    ];
-
-    for (var i = 0; i < person.length; i++) {
-        //display data inside paragraph with an id of [data]
-        var data = document.getElementById('data').innerHTML += [person[0].name];
-        console.log(person[0]);
-
-
-    }
-
-    delete person[0].name;
-    console.log(person[0]);
+            people_data += "</tr>";
+          });
+          $("#jsonData").append(people_data);
+        });
+      });
     </script>
-</body>
 
+    <div class="container">
+      <p class="text-muted text-center">
+        &copy; Copyright
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        . Allrights Reserved. Mahmoud Osman
+      </p>
+    </div>
+  </body>
 </html>
