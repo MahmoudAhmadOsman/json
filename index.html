@@ -10,27 +10,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>JSON to HTML</title>
   </head>
   <body>
-    <section class="container">
-      <table class="table table-bordered table-md">
-        <thead class="thead-dark">
-          <tr>
-            <th>ID</th>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-            <th>Email</th>
-            <th>Country</th>
-            <th>State</th>
-            <th>Address</th>
-            <th>Phone #</th>
-          </tr>
-        </thead>
-        <tbody id="jsonData"></tbody>
-      </table>
+    <section class="api_container">
+      <div class="container">
+        <div class="header">
+          <h1>JSON API</h1>
+        </div>
+        <table class="table table-bordered table-md">
+          <thead class="thead-dark">
+            <tr>
+              <th>ID</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>Email Address</th>
+              <th>Country</th>
+              <th>State</th>
+              <th>Address</th>
+              <th>Phone #</th>
+            </tr>
+          </thead>
+          <tbody id="jsonData"></tbody>
+        </table>
+      </div>
     </section>
 
     <script>
@@ -57,14 +62,16 @@
       });
     </script>
 
-    <div class="container">
-      <p class="text-muted text-center">
-        &copy; Copyright
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        . Allrights Reserved. Mahmoud Osman
-      </p>
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted text-center">
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . Allrights Reserved. Mahmoud Osman
+        </p>
+      </div>
     </div>
   </body>
 </html>

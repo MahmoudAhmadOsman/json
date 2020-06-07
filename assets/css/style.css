@@ -1,0 +1,19 @@
+body {
+  background-color: #d8d8d8;
+}
+.header {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.api_container .container {
+  background-color: #fff;
+  height: 100%;
+}
+
+.footer {
+  background-color: #cacaca;
+}
+.footer p {
+  font-size: 13px;
+}
