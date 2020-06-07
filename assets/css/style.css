@@ -16,6 +16,10 @@ body {
 .api_container table tr th {
   font-size: 14px;
 }
+.api_container .table .thead-dark th {
+  background-color: #808080;
+  border-color: #808080;
+}
 .api_container .container {
   height: 100%;
 }
