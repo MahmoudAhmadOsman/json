@@ -1,4 +1,5 @@
 ### JSON API
+Reading data from people.json file and displaying the data in index.html file using jQuery!
  
 ## Clone
 To clone this project use this command
